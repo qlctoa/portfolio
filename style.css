@@ -1,0 +1,152 @@
+:root {
+    --bg: #FCFBFF;
+    --main: #8B5CF6;
+    --sub: #A78BFA;
+    --light:#F3E8FF;
+    --text: #111827;
+    --gray: #6B7280;
+    --white: #FFFFFF;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero {
+    min-height: 100vh;
+    padding: 28px 8%;
+    background:
+        radial-gradient(circle at 75% 25%, #E9D5FF 0%, transparent 26%),
+        linear-gradient(135deg, #FFFFFF 0%, #FCFBFF 50%, #F5F3FF 100%);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 22px;
+    color: var(--main);
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    gap: 36px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-menu a{
+    transition: 0.3s;
+}
+
+.nav-menu a:hover{
+    color: var(--main);
+}
+
+.hero-content{
+    min-height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.label{
+    display: inline-black;
+    color: var(--main);
+    background: var(--light);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700px;
+    margin-bottom: 24px;
+}
+
+.hero-text h2{
+    font-size: 48px;
+    line-height: 1.35;
+    margin-bottom: 28px;
+    letter-spacing: -1.5px;
+}
+
+.hero-text h2 span{
+    color: var(--main);
+}
+
+.intro{
+    color: var(--gray);
+    font-size: 18px;
+    margin-bottom: 36px;
+}
+
+.intro strong{
+    color: var(--main);
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 16px;
+}
+
+.btn{
+    padding: 14px 26px;
+    border-radius: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.primary{
+    background: var(--main);
+    color: white;
+    box-shadow: 0 12px 28px rgba(139, 92, 246, 0.28);
+}
+
+.secondary{
+    background: white;
+    color: var(--main);
+    border: 1px solid var(--main);
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+}
+
+.hero-visual{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+.profile-circle {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #F3e8ff, #ddd6fe);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: var(--main);
+    font-weight: 700;
+    box-shadow: 0 25px 60px rgba(139, 92, 246, 0.18);
+}
