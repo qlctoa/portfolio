@@ -5,43 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박빛샘_Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 </head>
 
 <body>
-    <header class="hero">
-        <nav class="navbar">
-            <h1 class="logo">Park Bit Saem</h1>
+    <!-- 대표화면 -->
+<header class="hero">
+    <nav class="navbar">
+        <h1 class="logo">Park Bit Saem</h1>
 
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="label">HELLO, I'M</p>
-            <h2>사용자가 편하게 사용할 수 있는<br />
-                <span>웹서비스를</span> 만듭니다.
+        <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-content">
+        <div class="hero-text">
+            <h2>
+                사람을 이해하는 경험으로<br>
+                <span>웹 서비스를</span> 만듭니다.
             </h2>
+
             <p class="intro">
-            안녕하세요. <strong>Frontend Developer 박빛샘</strong>입니다.
+                AI를 활용해 문제를 해결하고<br>
+                더 나은 사용자 경험을 만드는<br>
+                <strong>Frontend Developer 박빛샘</strong>입니다.
             </p>
 
-                <div class="hero-buttons">
-                    <a href="#project" class="btn primary">프로젝트 보기</a>
-                    <a href="https://github.com/qlctoa" target="_blank" class="btn secondary">GitHub</a>
-                </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">프로젝트 보기</a>
+                <a href="https://github.com/qlctoa" target="_blank" class="btn secondary">GitHub</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="profile-card">
+                <img src="images/profile_img.png" alt="박빛샘 프로필 사진">
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- about -->
+        <section class="about" id="about">
+        <div class="section-title">
+            <p>ABOUT ME</p>
+            <h2>사람을 이해하는 경험에서 개발을 시작했습니다.</h2>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    작업치료사로 근무하며 사람마다 필요한 도움과 경험이 다르다는 것을 배웠습니다.<br>
+                </p>
+                
+                <p>
+                    현재는 헬스케어 AI 웹서비스 개발 과정을 수강하며,<br>의료 데이터를 분석하고 AI를 실제 서비스로 구현하는프로젝트를 진행하고 있습니다.
+                </p>
+                <p>
+                    사람을 이해했던 경험을 바탕으로, 누구나 쉽고 편하게 사용할 수 있는 웹 서비스를 <br> 만드는 프론트엔드 개발자로 성장해 나가고 있습니다.
+                </p>
             </div>
 
-                <div class="hero-visual">
-                    <div class="profile-circle">
-                        <span>Profile</span>
-                    </div>
-                </div>
+            <div class="about-cards">
+                <div class="about-card">
+                    <h3>💜 사람을 먼저 생각합니다</h3>
+                        <p>사용자의 입장에서 더 편리한 경험을<br>고민하며, 직관적이고 편안한 화면을<br>만드는 것을 중요하게 생각합니다.</p>
             </div>
-        </header>
+
+            <div class="about-card">
+                <h3>🤖 AI를 서비스로 연결합니다</h3>
+                    <p>AI 모델을 만드는 것에서 끝나지 않고,<br>실제 사용자가 활용할 수 있는 <br>웹서비스를 구현하는 데 <br>관심이 있습니다.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>🌱 꾸준히 배우고 성장합니다</h3>
+                    <p>새로운 기술을 배우고 프로젝트에 <br>적용하며 더 나은 서비스를 만들기 위해<br>꾸준히 성장하고 있습니다.</p>
+            </div>
+        </div>
+        </section>
+<!-- projects -->
 
 </body>
 </html>
