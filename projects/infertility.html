@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>난임 환자 임신 성공 여부 예측 서비스</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/infertility.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+<body>
+
+    <main class="project-detail">
+
+        <a href="../index.html#projects" class="back-btn">
+            ← Back to Projects
+        </a>
+
+        <section class="detail-hero">
+            <p class="detail-category">AI Healthcare Service</p>
+
+            <h1>
+                난임 환자 임신 성공 여부<br>
+                예측 서비스
+            </h1>
+
+            <p>
+                난임 환자의 시술 데이터를 기반으로 임신 성공 가능성을 예측하는 이진 분류 AI 모델을 구축했습니다.<br>
+                단순 예측 모델에서 끝나지 않고 예측 확률을 기반으로 맞춤형 케어 서비스를 기획하여 실제 서비스 활용 가능성까지 고려했습니다.
+            </p>
+        </section>
+
+        <section class="detail-summary">
+            <div class="summary-card">
+                <strong>📆 기간</strong>
+                <span>2026.05.22 ~ 2026.06.01</span>
+            </div>
+
+            <div class="summary-card">
+                <strong>👤 역할</strong>
+                <span>Feature Engineering / UX·UI 기획</span>
+            </div>
+
+            <div class="summary-card">
+                <strong>🏷️ 유형</strong>
+                <span>Binary Classification</span>
+            </div>
+
+            <div class="summary-card">
+                <strong>🚀 상태</strong>
+                <span>기획 및 AI 모델 개발</span>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Project Overview</h2>
+            <p>
+                난임 환자의 시술 데이터를 분석하여 임신 성공 가능성을 예측하는
+                이진 분류 AI 모델을 구축하고, 예측 확률을 기반으로 환자 맞춤형
+                케어 등급을 제안하는 서비스를 기획했습니다.
+            </p>
+        </section>
+
+        <section class="detail-section">
+            <h2>What I Did</h2>
+
+            <div class="detail-cards">
+                <div class="detail-card">
+                    <h3>🧬 임상 데이터 변수 설계</h3>
+                    <p>
+                        임상 기록을 분석하여 주요 피처를 선정하고,
+                        시술 유형과 배아 상태 등 임상적 맥락을 고려해 변수를 설계했습니다.
+                    </p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>📱 케어 플랫폼 UX/UI 기획</h3>
+                    <p>
+                        데이터 입력부터 예측 결과 확인, 맞춤형 가이드 제공까지 이어지는
+                        사용자 여정을 설계하고 대시보드 화면을 기획했습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Process</h2>
+
+            <div class="process-flow">
+                <div class="process-item">데이터 분석</div>
+                <span class="arrow">→</span>
+                <div class="process-item">Feature Engineering</div>
+                <span class="arrow">→</span>
+                <div class="process-item">모델 학습</div>
+                <span class="arrow">→</span>
+                <div class="process-item">예측 결과 도출</div>
+                <span class="arrow">→</span>
+                <div class="process-item">케어 등급 분류</div>
+                <span class="arrow">→</span>
+                <div class="process-item">서비스 화면 기획</div>
+            </div>
+
+        </section>
+
+        <section class="detail-section">
+    <h2>Model Performance</h2>
+    <p class="section-desc">
+세 가지 실험 전략을 비교하여 최종 모델을 선정하고,
+Public Leaderboard 성능을 기반으로 최적의 모델을 선택했습니다.
+</p>
+
+    <div class="performance-grid">
+
+        <!-- 왼쪽: 최종 모델 카드 -->
+        <div class="performance-card">
+            <h3>🏆 Best Model</h3>
+            <p class="best-model">Stacking Ensemble</p>
+
+            <div class="metric">
+                <span>📊 Public AUC</span>
+                <strong>0.74232</strong>
+                <small>🏅 Leaderboard 4th</small>
+            </div>
+
+            <div class="metric">
+                <span>🛠 Technique</span>
+                <div class="detail-tags">
+                    <span>CatBoost</span>
+                    <span>LightGBM</span>
+                    <span>XGBoost</span>
+                    <span>OOF Stacking</span>
+                </div>
+            </div>
+
+            <p class="performance-desc">
+                CatBoost, LightGBM, XGBoost를 OOF 기반으로<br> Stacking하여 최고 Public AUC(0.74232)를 달성했습니다.
+            </p>
+
+        </div>
+
+        <!-- 오른쪽: 표 + 선정 이유 -->
+        <div class="performance-right">
+
+            <div class="performance-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>실험</th>
+                            <th>전략</th>
+                            <th>제출 AUC</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1안</td>
+                            <td>주요 부스팅 모델 비교</td>
+                            <td>0.74213</td>
+                        </tr>
+
+                        <tr class="best-row">
+                            <td>🏆 2안</td>
+                            <td>다중 모델 앙상블 (Stacking)</td>
+                            <td><strong>0.74232</strong></td>
+                        </tr>
+
+                        <tr>
+                            <td>3안</td>
+                            <td>OOF + Multi-Seed 일반화</td>
+                            <td>0.74231</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="performance-note">
+                <h3>💡 최종 선정 이유</h3>
+                <p>
+                    여러 실험안을 비교한 결과, <strong>Stacking Ensemble</strong>이
+                    가장 높은 <strong>Public AUC(0.74232)</strong>를 기록했습니다.<br><br>
+                    CatBoost, LightGBM, XGBoost의 예측 결과를 OOF 기반으로 결합하여
+                    단일 모델보다 안정적인 일반화 성능을 확보했기 때문에 최종 모델로 선정했습니다.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+        <section class="detail-section">
+            <h2>Service Design</h2>
+
+            <p>
+                프로젝트 당시에는 HTML/CSS를 학습하기 전이었기 때문에,
+                PowerPoint를 활용해 서비스 화면을 기획했습니다.
+                <br>현재는 프론트엔드를 학습하며 당시 기획한 서비스를 웹으로 구현하고 있습니다.
+            </p>
+
+            <div class="screen-grid">
+                <div class="screen-box">
+                    <div class="screen-img">
+                        <img src="../images/infertility_img/1.png" alt="메인화면">
+                    </div>
+                    <h3>🏠 메인 화면</h3>
+                    <p>서비스의 목적과 주요 기능을 한눈에 이해할 수 있도록 구성했습니다.</p>
+                </div>
+
+                <div class="screen-box">
+                    <div class="screen-img">
+                        <img src="../images/infertility_img/2.png" alt="데이터 입력 화면">
+
+                    </div>
+                    <h3>📝 데이터 입력 화면</h3>
+                    <p>환자와 시술 정보를 입력하여 예측에 활용할 수 있도록 설계했습니다.</p>
+                </div>
+
+                <div class="screen-box">
+                    <div class="screen-img">
+                        <img src="../images/infertility_img/3.png" alt="예측 결과 화면">
+                    </div>
+                    <h3>📈 예측 결과 화면</h3>
+                    <p>임신 성공 가능성과 케어 단계를 직관적으로 확인할 수 있도록 기획했습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Tech Stack</h2>
+
+            <h4>🧠 AI / ML</h4>
+                <div class="detail-tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Scikit-learn</span>
+                    <span>CatBoost</span>
+                    <span>LightGBM</span>
+                    <span>XGBoost</span>
+                    <span>K-Fold OOF</span>
+                </div>
+
+            <h4>🎨 Planning</h4>
+                <div class="detail-tags">
+                    <span>PowerPoint</span>
+                    <span>UX/UI Design</span>
+                </div>
+        </section>
+
+        <section class="detail-section">
+            <h2>Retrospective</h2>
+
+            <p>
+                프로젝트 기간 내에는 모델 개발과 서비스 기획에 집중하여 실제 웹 서비스로
+                구현하지 못한 점이 아쉬웠습니다. <br>이후 프론트엔드를 학습하며 기획 단계에
+                머물렀던 서비스를 실제 웹 화면으로 구현하는 방향으로 발전시키고 있습니다.
+            </p>
+
+            <p class="notice">
+                ※ 본 프로젝트는 교육 과정에서 진행한 프로젝트로,
+                교육기관 정책에 따라 소스코드는 공개하지 않습니다.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>

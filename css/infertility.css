@@ -1,0 +1,259 @@
+/* ===========================
+   MODEL PERFORMANCE
+=========================== */
+
+.performance-grid {
+    display: grid;
+    grid-template-columns: 540px minmax(0,1fr);
+    gap: 56px;
+    margin-top: 36px;
+    align-items: start;
+}
+
+.performance-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 950px;
+}
+
+.performance-card {
+    background: #fff;
+    border: 1px solid #F1E8FF;
+    border-radius: 24px;
+    padding: 44px 40px;
+    box-shadow: 0 10px 28px rgba(124,58,237,.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.performance-card h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.best-model {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #7C3AED;
+    margin-bottom: 34px;
+}
+
+.metric {
+    margin-bottom: 22px;
+}
+
+.metric span {
+    display: block;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.metric strong {
+    display: block;
+    font-size: 42px;
+    color: #111827;
+    line-height: 1.1;
+}
+
+.metric small {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7C3AED;
+    opacity: .85;
+}
+
+.performance-card .detail-tags {
+    justify-content: center;
+}
+
+.performance-desc {
+    width: 100%;
+    margin-top: 30px;
+    text-align: left;
+    color: #555;
+    line-height: 1.9;
+    font-size: 17px;
+    word-break: keep-all;
+}
+
+.performance-table {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #F1E8FF;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(124,58,237,.08);
+}
+
+.performance-table table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.performance-table th,
+.performance-table td {
+    padding: 18px 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.performance-table th {
+    background: #F8F5FF;
+    color: #7C3AED;
+    font-weight: 800;
+}
+
+.performance-table td {
+    border-top: 1px solid #F2F2F2;
+}
+
+.performance-table th:nth-child(1),
+.performance-table td:nth-child(1) {
+    width: 110px;
+}
+
+.performance-table th:nth-child(3),
+.performance-table td:nth-child(3) {
+    width: 170px;
+}
+
+.best-row {
+    background: #F5F3FF;
+}
+
+.best-row td {
+    font-weight: 700;
+}
+
+.best-row strong {
+    color: #7C3AED;
+    font-size: 22px;
+}
+
+.performance-note {
+    width: 100%;
+    padding: 30px 34px;
+    background: #FAF8FF;
+    border: 1px solid #E9D5FF;
+    border-left: 5px solid #7C3AED;
+    border-radius: 20px;
+}
+
+.performance-note h3 {
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+
+.performance-note p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #555;
+    word-break: keep-all;
+}
+
+.performance-note strong {
+    color: #7C3AED;
+}
+
+/* ===========================
+   SERVICE DESIGN SCREEN
+=========================== */
+
+.screen-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0 28px;
+    margin-top: 36px;
+}
+
+.screen-grid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.screen-grid::-webkit-scrollbar-thumb {
+    background: #d8b4fe;
+    border-radius: 999px;
+}
+
+.screen-box {
+    background: #fff;
+    border: 1px solid #f1eaff;
+    border-radius: 28px;
+    padding: 24px;
+    box-shadow: 0 12px 35px rgba(139,92,246,.08);
+    min-width: 360px;
+    transition: .3s;
+}
+
+.screen-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 22px 50px rgba(139, 92, 246, 0.15);
+}
+
+.screen-img {
+    height: 700px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.screen-img img {
+    width: 250px;
+    padding: 8px;
+    background: #111827;
+    border-radius: 34px;
+    transition: .35s;
+}
+
+.screen-box h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.screen-box p {
+    color: var(--gray);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.screen-box:hover img {
+    transform: translateY(-6px);
+}
+
+@media (max-width: 900px) {
+    .performance-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .performance-right {
+        max-width: 100%;
+    }
+
+    .performance-table {
+        overflow-x: auto;
+    }
+
+    .performance-table table {
+        min-width: 620px;
+    }
+
+    .screen-grid {
+        grid-template-columns: 1fr;
+    }
+}

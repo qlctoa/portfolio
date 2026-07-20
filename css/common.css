@@ -1,0 +1,89 @@
+:root {
+    --bg: #fcfbff;
+    --main: #8b5cf6;
+    --sub: #a78bfa;
+    --light: #f3e8ff;
+    --text: #111827;
+    --gray: #4B5563;
+    --white: #ffffff;
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===========================
+   COMMON
+=========================== */
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 14px;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.primary {
+    background: var(--main);
+    color: white;
+    box-shadow: 0 12px 30px rgba(139,92,246,.28);
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(139,92,246,.35);
+}
+
+.secondary {
+    background: white;
+    color: var(--main);
+    border: 1.5px solid var(--main);
+}
+
+.secondary:hover {
+    background: var(--main);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+}
+
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: var(--main);
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    letter-spacing: -1px;
+}
