@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 </head>
@@ -23,6 +25,8 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <button type="button" class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">☰</button>
     </nav>
 
     <div class="hero-content">
@@ -102,7 +106,7 @@
     <div class="project-list">
         <article class="project-card main-project">
             <div class="project-img">
-                <img src="images/infertility.png" alt="난임 예측 프로젝트">
+                <img src="./images/infertility.png" alt="난임 예측 프로젝트">
             </div>
 
             <div class="project-info">
@@ -129,7 +133,7 @@
 
         <article class="project-card">
             <div class="project-img">
-                <span>Project Image</span>
+                <img src="./images/smoking.png" alt="흡연 여부 데이터 분석">
             </div>
 
             <div class="project-info">
@@ -149,13 +153,15 @@
 
                 <div class="project-links">
                     <a href="./projects/smoking.html" class="project-btn primary-link">자세히 보기</a>
+                    <a href="./projects/smoking.pdf" class="project-btn" target="_blank">발표자료</a>
+
                 </div>
             </div>
         </article>
 
         <article class="project-card">
             <div class="project-img">
-                <span>Project Image</span>
+                <img src="./images/pofol.png" alt="포트폴리오 사이트">
             </div>
 
             <div class="project-info">
@@ -173,12 +179,134 @@
                 </div>
 
                 <div class="project-links">
-                    <a href="https://github.com/qlctoa/portfolio" class="project-btn">GitHub</a>
-                    <a href="./Portfolio/index.html" class="project-btn primary-link">Demo</a>
+                    <a href="https://github.com/qlctoa/portfolio" class="project-btn primary-link" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
         </article>
     </div>
+
 </section>
+
+<!-- Skills -->
+<section class="skills" id="skills">
+    <div class="section-title">
+        <p>SKILLS</p>
+        <h2>프로젝트를 통해 익힌 기술입니다.</h2>
+    </div>
+
+    <div class="skills-grid">
+        <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">💻</div>
+            <h3>Frontend</h3>
+            <p>
+                사용자 입장에서 이해하기 쉽고 편리한 반응형 화면을
+                구현하기 위해 노력합니다.
+            </p>
+
+            <div class="skill-tags">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Web</span>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">⚙️</div>
+            <h3>Backend <span class="learning-badge">학습 중</span></h3>
+            <p>
+                Python과 FastAPI를 학습하며 AI 모델의 예측 결과를
+                웹서비스에서 활용할 수 있도록 API 구현을 연습하고 있습니다.
+            </p>
+
+            <div class="skill-tags">
+                <span>Python</span>
+                <span>FastAPI</span>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">🤖</div>
+            <h3>Data &amp; AI</h3>
+            <p>
+                의료 데이터를 분석하고 머신러닝 모델을 활용해
+                의미 있는 결과를 도출한 경험이 있습니다.
+            </p>
+
+            <div class="skill-tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Scikit-learn</span>
+                <span>Matplotlib</span>
+                <span>XGBoost</span>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="skill-icon" aria-hidden="true">🛠️</div>
+            <h3>Tools</h3>
+            <p>
+                버전 관리와 데이터 분석 도구를 활용하여
+                프로젝트를 기록하고 관리합니다.
+            </p>
+
+            <div class="skill-tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Google Colab</span>
+                <span>Notion</span>
+            </div>
+        </article>
+    </div>
+
+    <article class="learning-notes-card">
+        <div class="learning-notes-icon" aria-hidden="true">📚</div>
+
+        <div class="learning-notes-content">
+            <p class="learning-notes-label">LEARNING NOTES</p>
+            <h3>AI 학습 기록</h3>
+            <p>
+                헬스케어 AI 웹서비스 개발 과정을 수강하며
+                배운 내용을 꾸준히 기록하고 있습니다.
+            </p>
+
+            <div class="learning-notes-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>FastAPI</span>
+                <span>Healthcare AI</span>
+            </div>
+        </div>
+
+        <a href="https://suave-ellipse-09d.notion.site/AI-33ac242d0acf804b9496fa1bf1c5111e"
+           class="learning-notes-btn"
+           target="_blank"
+           rel="noopener noreferrer">학습 노트 보기 →</a>
+    </article>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <div class="contact-content">
+        <p class="contact-label">CONTACT</p>
+        <h2>함께 성장할 기회를 기다리고 있습니다.</h2>
+        <p class="contact-desc">
+            새로운 도전을 즐기며, 사용자에게 도움이 되는 서비스를
+            함께 만들어가고 싶습니다.
+        </p>
+
+        <div class="contact-links">
+            <button type="button" class="contact-btn primary-contact copy-email" data-email="qlctoa67@naver.com">이메일 복사</button>
+            <a href="https://github.com/qlctoa" class="contact-btn" target="_blank" rel="noopener noreferrer">GitHub 보기</a>
+            <a href="./files/resume-park-bit-saem.pdf" class="contact-btn" download>이력서 다운로드</a>
+        </div>
+    </div>
+
+    <p class="copyright">© 2026 Park Bit Saem. All rights reserved.</p>
+</section>
+<button type="button" class="back-to-top" aria-label="맨 위로 이동">↑</button>
+<script src="./script.js"></script>
 </body>
 </html>

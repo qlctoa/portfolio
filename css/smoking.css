@@ -33,6 +33,9 @@
     align-items:center;
     border-bottom:1px solid #F3E8FF;
     overflow:hidden;
+    padding:0;
+    border:0;
+    cursor:zoom-in;
 }
 
 .project-img img{
@@ -45,6 +48,86 @@
 
 .screen-box:hover .project-img img{
     transform:scale(1.04);
+}
+
+/* ===========================
+   VISUALIZATION LIGHTBOX
+=========================== */
+
+.chart-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 24px;
+    align-items: center;
+    padding: 50px 6%;
+    background: rgba(17, 24, 39, .88);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s ease, visibility .25s ease;
+}
+
+.chart-lightbox.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lightbox-content {
+    min-width: 0;
+    text-align: center;
+}
+
+.lightbox-image {
+    display: block;
+    width: 100%;
+    max-height: calc(100vh - 150px);
+    object-fit: contain;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, .28);
+}
+
+.lightbox-title {
+    margin-top: 16px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.lightbox-close,
+.lightbox-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .35);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .25s ease;
+}
+
+.lightbox-close:hover,
+.lightbox-nav:hover {
+    color: var(--main);
+    background: #fff;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+
+body.lightbox-open {
+    overflow: hidden;
 }
 
 .screen-box h3{
@@ -141,4 +224,19 @@
         grid-template-columns:1fr;
     }
 
+}
+
+@media (max-width: 700px) {
+    .chart-lightbox {
+        grid-template-columns: 1fr;
+        padding: 70px 16px 30px;
+    }
+
+    .lightbox-nav {
+        display: none;
+    }
+
+    .lightbox-image {
+        max-height: calc(100vh - 140px);
+    }
 }

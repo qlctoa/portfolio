@@ -174,25 +174,25 @@
 
         <div class="screen-grid">
             <div class="screen-box">
-                <div class="project-img">
+                <button type="button" class="project-img lightbox-trigger" data-index="0" aria-label="변수 간 상관관계 그래프 크게 보기">
                     <img src="smoking01.png" alt="상관관계 히트맵">
-                </div>
+                </button>
                 <h3>🔥 변수 간 상관관계</h3>
                 <p>흡연 여부와 관련성이 높은 주요 건강 지표를 확인했습니다.</p>
             </div>
 
             <div class="screen-box">
-                <div class="project-img">
+                <button type="button" class="project-img lightbox-trigger" data-index="1" aria-label="변수 분포 비교 그래프 크게 보기">
                     <img src="smoking02.png" alt="흡연 여부에 따른 변수 분포 비교">
-                </div>
+                </button>
                 <h3>📊 변수 분포 비교</h3>
                 <p>흡연자와 비흡연자의 건강 지표 분포 차이를 시각화했습니다.</p>
             </div>
 
             <div class="screen-box">
-                <div class="project-img">
+                <button type="button" class="project-img lightbox-trigger" data-index="2" aria-label="효과 크기 분석 그래프 크게 보기">
                     <img src="smoking03.png" alt="효과 크기 분석">
-                </div>
+                </button>
                 <h3>📈 효과 크기 분석</h3>
                 <p>헤모글로빈, 중성지방, 혈청 크레아티닌의 실질적 차이를 확인했습니다.</p>
             </div>
@@ -264,5 +264,19 @@
     </section>
 
 </main>
+
+<div class="chart-lightbox" role="dialog" aria-modal="true" aria-label="확대된 분석 그래프" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="확대 화면 닫기">×</button>
+    <button type="button" class="lightbox-nav lightbox-prev" aria-label="이전 그래프">←</button>
+
+    <div class="lightbox-content">
+        <img src="smoking01.png" alt="상관관계 히트맵" class="lightbox-image">
+        <p class="lightbox-title" aria-live="polite">🔥 변수 간 상관관계 · 1 / 3</p>
+    </div>
+
+    <button type="button" class="lightbox-nav lightbox-next" aria-label="다음 그래프">→</button>
+</div>
+
+<script src="../smoking.js"></script>
 </body>
 </html>
