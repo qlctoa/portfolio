@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <title>스트레스 지수 예측 해커톤 · Weighted Quantile ExtraTrees</title>
 
     <link rel="stylesheet" href="../css/common.css">
@@ -63,18 +64,42 @@
     <section class="detail-section">
         <h2>Slides</h2>
 
-        <div class="detail-gallery">
-            <figure>
-                <img src="../images/stress-score/title.png" alt="스트레스 지수 예측 해커톤 발표자료 표지">
-                <figcaption>발표자료 표지</figcaption>
+        <div class="detail-gallery slide-gallery">
+            <figure class="presentation-slide slide-cover">
+                <div class="slide-body">
+                    <p class="slide-kicker">HEALTH DATA · MACHINE LEARNING</p>
+                    <h3>스트레스 지수<br>예측 해커톤</h3>
+                    <p>건강·생활 데이터를 활용한 개인별 스트레스 점수 예측</p>
+                    <div class="slide-pills"><span>3인 팀</span><span>회귀 모델</span><span>Public MAE 0.12827</span></div>
+                </div>
+                <figcaption>프로젝트 소개</figcaption>
             </figure>
-            <figure>
-                <img src="../images/stress-score/modeling-strategy.png" alt="파생변수, 피처 가중치, ExtraTrees, 분위수 예측 4단계 모델링 전략 다이어그램">
-                <figcaption>모델링 전략 4단계</figcaption>
+            <figure class="presentation-slide slide-preprocessing">
+                <div class="slide-body">
+                    <p class="slide-kicker">01 · DATA</p>
+                    <h3>데이터 분석 및 전처리</h3>
+                    <div class="slide-grid">
+                        <div><span>01</span><h4>데이터 구성</h4><p>신체·건강 정보와 생활 습관 데이터를 함께 활용</p></div>
+                        <div><span>02</span><h4>결측치 처리</h4><p>수치형은 중앙값, 범주형은 별도 missing 범주로 대체</p></div>
+                        <div><span>03</span><h4>범주형 인코딩</h4><p>One-Hot Encoding 적용, 처음 보는 범주는 무시</p></div>
+                        <div><span>04</span><h4>데이터 누수 방지</h4><p>전처리 기준은 Train에서만 학습해 Test에 적용</p></div>
+                    </div>
+                </div>
+                <figcaption>데이터 분석과 전처리 흐름</figcaption>
             </figure>
-            <figure>
-                <img src="../images/stress-score/mae-results.png" alt="제출별 Public MAE 변화 그래프, 23.95% 개선">
-                <figcaption>제출별 Public MAE 변화</figcaption>
+            <figure class="presentation-slide slide-modeling">
+                <div class="slide-body">
+                    <p class="slide-kicker">02 · MODELING &amp; RESULT</p>
+                    <h3>모델링 전략과 결과</h3>
+                    <div class="slide-flow">
+                        <div><span>01</span><h4>파생변수</h4><p>BMI·혈압 관계·결측치 개수</p></div>
+                        <div><span>02</span><h4>피처 가중치</h4><p>중요 피처를 복제해 선택 확률 증가</p></div>
+                        <div><span>03</span><h4>ExtraTrees</h4><p>결정트리 1,200개로 예측</p></div>
+                        <div><span>04</span><h4>51% 분위수</h4><p>트리 예측값의 51% 지점 선택</p></div>
+                    </div>
+                    <div class="slide-result"><span>최종 Public MAE <strong>0.12827</strong></span><span>최초 제출 대비 <strong>23.95% 개선</strong></span></div>
+                </div>
+                <figcaption>모델링 4단계와 공개 리더보드 결과</figcaption>
             </figure>
         </div>
     </section>
@@ -182,10 +207,10 @@
     <section class="detail-section">
         <h2>Team &amp; Collaboration</h2>
         <p>
-            김지현(팀장, 파생변수・모델 개선), 안상균(대안 모델・튜닝, GitHub&amp;Notion 관리),
-            박빛샘(발표자료 제작, ExtraTrees・분위수 조정) 3인이 팀을 이뤘습니다. Notion으로 일정과
-            아이디어・성능을 기록하고, GitHub 저장소로 코드와 실험 결과를 공유했으며, ZEP에서
-            실시간으로 실험 결과를 비교하고 다음 방향을 정했습니다.
+            3인 팀에서 저는 발표자료 제작과 ExtraTrees・분위수 조정을 맡았습니다.
+            팀은 파생변수 설계와 모델 개선, 대안 모델 실험과 튜닝을 나누어 진행했습니다.
+            Notion으로 일정과 아이디어・성능을 기록하고, GitHub 저장소로 코드와 실험 결과를
+            공유했으며, ZEP에서 실시간으로 결과를 비교하고 다음 방향을 정했습니다.
         </p>
     </section>
 

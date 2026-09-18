@@ -135,12 +135,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 140px;
+    padding: 90px 0 60px;
 }
 
 .hero-text {
-    flex: 0 0 620px;
-    max-width: 620px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
 }
 
 .hero-text h2 {
@@ -149,7 +150,8 @@
     line-height: 1.25;
     letter-spacing: -2px;
     margin-bottom: 32px;
-    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-text h2 span {
@@ -169,6 +171,7 @@
 
 .hero-buttons {
     display: flex;
+    justify-content: center;
     gap: 16px;
 }
 
@@ -205,63 +208,6 @@
 
 .btn:hover {
     transform: translateY(-4px);
-}
-
-
-/* ===========================
-   PROFILE IMAGE
-=========================== */
-.hero-visual {
-    flex: 0 0 420px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transform: translateX(0);
-}
-
-.hero-visual::before {
-    content: "";
-    position: absolute;
-    width: 560px;
-    height: 560px;
-    border-radius: 50%;
-    background: radial-gradient(
-        circle,
-        rgba(233, 213, 255, 0.85) 0%,
-        rgba(233, 213, 255, 0.45) 65%,
-        rgba(233, 213, 255, 0) 100%
-    );
-    filter: blur(60px);
-    opacity: 0.45;
-    transform: translate(5px, 10px);
-    z-index: 0;
-}
-
-.profile-card {
-    position: relative;
-    z-index: 2;
-    width: 315px;
-    height: 315px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: radial-gradient(
-        circle at 50% 35%,
-        #ffffff 0%,
-        #f8f3ff 45%,
-        #eddcff 75%,
-        #dcc2ff 100%
-    );
-    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.12);
-}
-
-.profile-card img {
-    width: 105%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    transform: translate(-6px, -15px);
-    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.08));
 }
 
 
@@ -404,10 +350,7 @@
     }
 
     .hero-content {
-        flex-direction: column;
-        text-align: center;
-        padding-top: 80px;
-        gap: 40px;
+        padding-top: 110px;
     }
 
     .hero-text h2 {
@@ -416,16 +359,6 @@
     .hero-buttons a{
     padding:16px 34px;
     font-size:17px;
-    }
-
-    .hero-visual::before {
-        width: 300px;
-        height: 300px;
-    }
-
-    .profile-card {
-        width: 260px;
-        height: 260px;
     }
 
     .about-cards {
@@ -501,6 +434,11 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.project-img.mobile-preview img {
+    object-fit: cover;
+    object-position: center top;
 }
 
 .project-img-icon {
@@ -596,4 +534,41 @@
     .project-info {
         padding: 24px;
     }
+}
+
+/* Shared project covers keep thumbnail text sharp and consistent. */
+.project-preview {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 28px 32px;
+    background: radial-gradient(circle at 90% 20%, #e6d7ff 0, transparent 40%),
+                linear-gradient(135deg, #f9f6ff, #e7f0ec);
+    color: #355c55;
+    text-align: left;
+}
+
+.project-preview .preview-kicker {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .14em;
+}
+
+.project-preview strong {
+    margin: 16px 0 20px;
+    font-size: clamp(24px, 2.6vw, 34px);
+    line-height: 1.25;
+    word-break: keep-all;
+}
+
+.project-preview .preview-note {
+    padding: 9px 13px;
+    border-radius: 999px;
+    background: #fff;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    .project-preview { padding: 24px; }
+    .project-preview strong { margin: 12px 0 16px; }
 }

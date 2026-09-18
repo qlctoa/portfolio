@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
     <title>박빛샘 | Full-Stack Developer Portfolio</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -39,7 +40,7 @@
             <p class="intro">
                 AI를 활용해 문제를 해결하고<br>
                 더 나은 사용자 경험을 만드는<br>
-                <strong>Full-Stack Developer 박빛샘</strong>입니다.
+                <strong>Front-end Developer 박빛샘</strong>입니다.
             </p>
 
             <div class="hero-buttons">
@@ -48,11 +49,6 @@
             </div>
         </div>
 
-        <div class="hero-visual">
-            <div class="profile-card">
-                <img src="images/profile_img.png" alt="박빛샘 프로필 사진">
-            </div>
-        </div>
     </div>
 </header>
 
@@ -73,7 +69,7 @@
                     헬스케어 AI 웹서비스 개발 과정에서 기술 학습을 마치고,<br>현재 배운 기술을 활용한 새로운 웹서비스 프로젝트를 진행하고 있습니다.
                 </p>
                 <p>
-                    사람을 이해했던 경험을 바탕으로, 사용자 화면부터 서버와 데이터까지 연결해<br>누구나 쉽고 편하게 사용할 수 있는 웹 서비스를 만드는 풀스택 개발자로 성장하고 있습니다.
+                    사람을 이해했던 경험을 바탕으로, 사용자 화면부터 서버와 데이터까지 연결해<br>누구나 쉽고 편하게 사용할 수 있는 웹 서비스를 개발자로 성장하고 있습니다.
                 </p>
             </div>
 
@@ -105,8 +101,10 @@
 
     <div class="project-list">
         <article class="project-card main-project">
-            <div class="project-img">
-                <img src="./images/infertility.png" alt="난임 예측 프로젝트">
+            <div class="project-img project-preview" role="img" aria-label="난임 예측 서비스 미리보기">
+                <span class="preview-kicker">AI HEALTHCARE</span>
+                <strong>난임 예측 서비스</strong>
+                <span class="preview-note">AI 기반 웹서비스</span>
             </div>
 
             <div class="project-info">
@@ -132,8 +130,10 @@
         </article>
 
         <article class="project-card">
-            <div class="project-img">
-                <img src="./images/smoking.png" alt="흡연 여부 데이터 분석">
+            <div class="project-img project-preview" role="img" aria-label="흡연 데이터 분석 미리보기">
+                <span class="preview-kicker">DATA ANALYSIS</span>
+                <strong>흡연 데이터 분석</strong>
+                <span class="preview-note">건강 지표 시각화</span>
             </div>
 
             <div class="project-info">
@@ -160,8 +160,10 @@
         </article>
 
         <article class="project-card">
-            <div class="project-img">
-                <img src="./images/pofol.png" alt="포트폴리오 사이트">
+            <div class="project-img project-preview" role="img" aria-label="포트폴리오 웹사이트 미리보기">
+                <span class="preview-kicker">PORTFOLIO</span>
+                <strong>포트폴리오 웹사이트</strong>
+                <span class="preview-note">반응형 웹사이트</span>
             </div>
 
             <div class="project-info">
@@ -185,7 +187,11 @@
         </article>
 
         <article class="project-card">
-            <div class="project-img"><img src="./images/meokbo-lite/home.png" alt="삼킴장애 환자 식사 모니터링 앱 meokbo-lite 홈 화면"></div>
+            <div class="project-img project-preview" role="img" aria-label="식사 모니터링 앱 미리보기">
+                <span class="preview-kicker">HEALTHCARE APP</span>
+                <strong>식사 모니터링 앱</strong>
+                <span class="preview-note">React · Next.js</span>
+            </div>
 
             <div class="project-info">
                 <p class="project-category">Healthcare · Side Project</p>
@@ -212,14 +218,18 @@
         </article>
 
         <article class="project-card">
-            <div class="project-img"><img src="./images/quiet-log/dashboard.png" alt="생활 소음 기록 앱 quiet_log 대시보드 화면"></div>
+            <div class="project-img project-preview" role="img" aria-label="생활 소음 기록 앱 미리보기">
+                <span class="preview-kicker">KDT HACKATHON MVP</span>
+                <strong>생활 소음 기록 앱</strong>
+                <span class="preview-note">React Native · Expo</span>
+            </div>
 
             <div class="project-info">
-                <p class="project-category">Hackathon Project</p>
+                <p class="project-category">KDT Hackathon MVP</p>
                 <h3>생활 소음 기록 앱</h3>
                 <p class="project-desc">
-                    해커톤 참가를 위해 준비한 프로젝트로, 아파트·오피스텔·다세대주택 등
-                    주거 형태별 생활 소음 상황을 기록하고 확인할 수 있는 애플리케이션입니다.
+                    KDT 해커톤 준비 과정에서 제작한 MVP입니다. 공동주거 환경의 생활 소음을
+                    기록하고 확인하는 흐름을 구현했습니다.
                 </p>
 
                 <div class="project-tags">
@@ -236,7 +246,11 @@
         </article>
 
         <article class="project-card">
-            <div class="project-img"><img src="./images/stress-score/mae-results.png" alt="스트레스 지수 예측 해커톤 결과 그래프"></div>
+            <div class="project-img project-preview" role="img" aria-label="스트레스 지수 예측 미리보기">
+                <span class="preview-kicker">MACHINE LEARNING</span>
+                <strong>스트레스 지수 예측</strong>
+                <span class="preview-note">Public MAE <b>0.12827</b></span>
+            </div>
 
             <div class="project-info">
                 <p class="project-category">Machine Learning Hackathon</p>
@@ -377,7 +391,7 @@
         <div class="contact-links">
             <button type="button" class="contact-btn primary-contact copy-email" data-email="qlctoa67@naver.com">이메일 복사</button>
             <a href="https://github.com/qlctoa" class="contact-btn" target="_blank" rel="noopener noreferrer">GitHub 보기</a>
-            <a href="./files/resume-park-bit-saem.pdf" class="contact-btn" target="_blank" rel="noopener noreferrer">이력서 보기</a>
+            <a href="./files/PBS_FE.pdf" class="contact-btn" target="_blank" rel="noopener noreferrer">이력서 보기</a>
         </div>
     </div>
 
