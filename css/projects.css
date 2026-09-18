@@ -425,3 +425,28 @@
     background: var(--main);
     color: white;
 }
+
+
+/* ===========================
+   SECTION HEADER WITH ACTION LINK
+=========================== */
+
+.section-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 26px;
+}
+
+.section-header-row h2 {
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .section-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
