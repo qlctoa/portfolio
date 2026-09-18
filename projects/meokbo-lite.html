@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼킴장애 환자 식사 모니터링 앱 · meokbo-lite</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/projects.css">
+</head>
+
+<body>
+<main class="project-detail">
+
+    <a href="../index.html#projects" class="back-btn">← Back to Projects</a>
+
+    <section class="detail-hero">
+        <p class="detail-category">Healthcare · Side Project</p>
+
+        <h1>삼킴장애 환자 식사 모니터링 앱<br>meokbo-lite</h1>
+
+        <p>
+            작업치료사로 근무하며 삼킴장애(연하장애) 환자와 보호자가 안전한 식사 자세와 음식 물성을
+            스스로 확인하기 어려워하는 모습을 자주 접했습니다.<br>
+            meokbo-lite는 카메라 기반 자세 인식과 식사 기록 기능으로 이러한 어려움을 보조하기 위해
+            기획한 개인 사이드 프로젝트입니다.
+        </p>
+    </section>
+
+    <section class="detail-summary">
+        <div class="summary-card">
+            <strong>👤 역할</strong>
+            <span>기획 · 풀스택 개발 (1인)</span>
+        </div>
+
+        <div class="summary-card">
+            <strong>🏷️ 유형</strong>
+            <span>Mobile Web App</span>
+        </div>
+
+        <div class="summary-card">
+            <strong>🚀 상태</strong>
+            <span>개인 사이드 프로젝트</span>
+        </div>
+
+        <div class="summary-card">
+            <strong>🛠️ 사용 기술</strong>
+            <span>React · Next.js · TypeScript</span>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <h2>Project Overview</h2>
+        <p>
+            임상 현장에서 삼킴장애 환자와 보호자를 만날 때마다 "지금 이 자세가 맞는지",
+            "이 정도 굳기의 음식을 먹어도 되는지"를 매 끼니 스스로 판단하기 어려워하는 경우를 자주 보았습니다.
+            meokbo-lite는 이러한 어려움을 카메라 기반 기술로 보조하기 위해 기획한 서비스로,
+            진단이나 치료를 대체하지 않고 보호자가 일상에서 참고할 수 있는 보조 도구를 목표로 합니다.
+        </p>
+    </section>
+
+    <section class="detail-section">
+        <h2>Key Features</h2>
+
+        <div class="detail-cards">
+            <div class="detail-card">
+                <h3>📷 자세 확인</h3>
+                <p>
+                    카메라로 턱 당김(chin tuck) 자세를 인식하고,
+                    식사 중 자세 유지 여부를 실시간으로 추적합니다.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h3>🍚 저작 상태 감지</h3>
+                <p>
+                    턱 움직임과 삼킴 패턴을 분석해
+                    씹는 상태와 삼킴 시점을 감지합니다.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h3>📝 식사 세션 기록</h3>
+                <p>
+                    식사 시간, 자세 유지 시간, 자세 이탈 횟수를
+                    세션 단위로 자동 기록합니다.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h3>📅 식사 통계 캘린더</h3>
+                <p>
+                    홈 화면 캘린더에서 일간·월간 식사 기록을
+                    한눈에 확인할 수 있습니다.
+                </p>
+            </div>
+
+            <div class="detail-card">
+                <h3>🥣 음식 물성 가이드</h3>
+                <p>
+                    국내 식약처 IDDSI 4~6단계 기준에 맞춘 참고 음식 예시와,
+                    이미지 균일도·입자 분석 기반 물성 가이드를 제공합니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <h2>Process</h2>
+
+        <div class="process-flow">
+            <div class="process-item">문제 발견</div>
+            <span class="arrow">→</span>
+            <div class="process-item">서비스 기획</div>
+            <span class="arrow">→</span>
+            <div class="process-item">비전 기능 구현</div>
+            <span class="arrow">→</span>
+            <div class="process-item">기록·통계 구현</div>
+        </div>
+    </section>
+
+    <section class="detail-section">
+        <h2>Tech Stack</h2>
+
+        <h4>💻 Frontend</h4>
+        <div class="detail-tags">
+            <span>React 19</span>
+            <span>Next.js 16</span>
+            <span>TypeScript</span>
+            <span>Vite</span>
+        </div>
+
+        <h4>⚙️ Backend · Infra</h4>
+        <div class="detail-tags">
+            <span>Cloudflare Workers</span>
+            <span>Drizzle ORM</span>
+            <span>D1</span>
+        </div>
+
+        <h4>👁️ Vision</h4>
+        <div class="detail-tags">
+            <span>MediaPipe Tasks Vision</span>
+        </div>
+
+        <h4>💾 Storage</h4>
+        <div class="detail-tags">
+            <span>Browser Local Storage</span>
+        </div>
+    </section>
+
+    <p class="notice">
+        ⚠️ 본 서비스는 의료기기 또는 진단 도구가 아니며, 음식 단계 및 자세 관련 안내는
+        반드시 담당 의료진의 지시를 따라야 합니다.
+    </p>
+
+    <section class="detail-section">
+        <h2>Links</h2>
+        <div class="project-links">
+            <a href="https://github.com/qlctoa/meokbo-lite" class="project-btn primary-link" target="_blank" rel="noopener noreferrer">GitHub 코드 보기</a>
+        </div>
+    </section>
+
+</main>
+</body>
+</html>

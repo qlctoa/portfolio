@@ -503,6 +503,10 @@
     object-fit: contain;
 }
 
+.project-img-icon {
+    font-size: 72px;
+}
+
 .project-info {
     padding: 30px;
     margin-top:auto;
