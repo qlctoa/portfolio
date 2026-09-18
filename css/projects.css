@@ -204,3 +204,47 @@
         gap: 16px;
     }
 }
+
+/* ===========================
+   PROJECT SCREENSHOT GALLERY
+=========================== */
+
+.detail-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.detail-gallery figure {
+    margin: 0;
+    background: var(--white);
+    border: 1px solid #f1eaff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(139, 92, 246, 0.08);
+}
+
+.detail-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.detail-gallery figcaption {
+    padding: 16px 20px 20px;
+    color: var(--gray);
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .detail-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .detail-gallery {
+        grid-template-columns: 1fr;
+    }
+}
