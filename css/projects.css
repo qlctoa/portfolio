@@ -177,6 +177,7 @@
 }
 
 .notice {
+    max-width: 900px;
     margin-top: 40px;
     padding: 28px 32px;
     border-left: 5px solid #7C3AED;
